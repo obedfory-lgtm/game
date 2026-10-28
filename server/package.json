@@ -1,0 +1,31 @@
+{
+  "name": "realms-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "colyseus": "0.16.0",
+    "@colyseus/transport-websocket": "0.16.0",
+    "pg": "8.13.1",
+    "dotenv": "16.4.5",
+    "uuid": "11.0.3",
+    "argon2": "0.41.1",
+    "jose": "5.9.6",
+    "zod": "3.23.8",
+    "rate-limiter-flexible": "7.1.1",
+    "node-fetch": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "@types/pg": "8.11.10",
+    "@types/uuid": "10.0.0",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  }
+}
